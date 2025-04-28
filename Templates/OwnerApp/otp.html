@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'otpverifyurl' email=email %}" method="post">
+        {% csrf_token %}
+        <label for="">
+            Enter the OTP:
+            <input type="text" name="otp">
+        </label>
+        <input type="submit" name="" id="" value="Submit">
+    </form>
+</body>
+</html>
